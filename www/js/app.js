@@ -5,7 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services']);
+//lo comento porque no funciono
+//var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services']);
+var app = angular.module('starter', ['ionic', 'starter.controllers'])
 
 
 app.run(function ($ionicPlatform) {
@@ -21,6 +23,7 @@ app.run(function ($ionicPlatform) {
         }
     });
 })
+
 
 app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
